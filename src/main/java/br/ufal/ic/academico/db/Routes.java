@@ -26,12 +26,12 @@ import lombok.extern.slf4j.Slf4j;
 public class Routes {
     private final Database database;
 
-    @GET
-    @UnitOfWork
-    public Response getAll(){
-        log.info("getAll");
-        return Response.ok(database.list()).build();
-    }
+//    @GET
+//    @UnitOfWork
+//    public Response getAll(){
+//        log.info("getAll");
+//        return Response.ok(database.list()).build();
+//    }
 
     @GET
     @Path("/{id}")
